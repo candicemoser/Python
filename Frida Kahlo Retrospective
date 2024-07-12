@@ -1,0 +1,21 @@
+# Analyzed data from Frida Kahlo Retrospective to put together a audio tour
+paintings = ["The Two Fridas", "My Dress Hangs Here", "Tree of Hope", "Self Portrait With Monkeys"]
+dates = ["1939", "1933", "1946", "1940"]
+paintings = zip(paintings, dates)
+converted_list = list(paintings)
+print(converted_list)
+
+new_painting_list = list(converted_list)
+new_painting_list.append(("The Broken Column", 1944))
+new_painting_list.append(("The Wounded Deer", 1946))
+new_painting_list.append(("Me and My Doll", 1937))
+print(new_painting_list)
+
+paintings = len(new_painting_list)
+print(paintings)
+
+audio_tour_number = range(1, 8)
+print(list(audio_tour_number))
+
+master_list = list(zip(audio_tour_number, new_painting_list))
+print(master_list)
